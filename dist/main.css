@@ -1,0 +1,16 @@
+.input.valid {
+  border: 2px solid green;
+}
+.input.invalid {
+  border: 2px solid red;
+}
+img {
+  width: 100px;
+  height: 50px;
+  filter: grayscale(100);
+}
+
+img.current {
+  filter: grayscale(0);
+}
+

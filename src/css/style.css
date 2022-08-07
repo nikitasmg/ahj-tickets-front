@@ -1,0 +1,121 @@
+*,*:after,*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    max-width: 1440px;
+    height: 100vh;
+
+    margin: auto;
+    padding: 20px 50px;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    width: 50%;
+    padding: 20px 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.modal__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal__input {
+    padding: 15px 10px;
+    font-size: 16px;
+
+}
+
+.modal__buttons {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    margin-left:auto;
+
+}
+
+.button {
+    display: block;
+
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.add-button {
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+
+.ticket__item {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.ticket__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ticket__description {
+    display: none;
+}
+
+.ticket__description.active {
+    display: block;
+}
